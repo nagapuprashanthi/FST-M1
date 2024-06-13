@@ -13,7 +13,7 @@ public class Activity1 {
         list.add("alpha"); // at index 0
         list.add("beta"); // at index 1
     }
-    // Test method to test the insert operation
+    // Test method to test the insert operation descption 
     @Test
     public void insertTest() {
         // Assertion for size
@@ -27,7 +27,7 @@ public class Activity1 {
         assertEquals("beta", list.get(1), "Wrong element");
         assertEquals("charlie", list.get(2), "Wrong element");
     }
-    // Test method to test the replace operation
+    // Test method to test the replace operation 
     @Test
     public void replaceTest() {
         // Replace new element
