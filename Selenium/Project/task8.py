@@ -25,8 +25,8 @@ with webdriver.Firefox(service=service) as driver:
     # Find the contact form fields (Full Name, email, etc.)
     # Fill in the information and leave a message.
     # Click submit.
-    driver.find_element(By.XPATH,"//input[@id='wpforms-8-field_0']").send_keys("Padmini")
-    driver.find_element(By.XPATH,"//input[@type='email']").send_keys("Padmini@example.com")
+    driver.find_element(By.XPATH,"//input[@id='wpforms-8-field_0']").send_keys("Praha")
+    driver.find_element(By.XPATH,"//input[@type='email']").send_keys("Praha@example.com")
     driver.find_element(By.CSS_SELECTOR,"input[id='wpforms-8-field_3']").send_keys("Test")
     driver.find_element(By.XPATH,"//textarea[@id='wpforms-8-field_2']").send_keys("Need new courses")
     driver.find_element(By.XPATH,"//button[@type='submit']").click()
