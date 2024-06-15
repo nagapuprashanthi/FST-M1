@@ -40,17 +40,17 @@ public class Activity2 {
         given().
                 baseUri("https://petstore.swagger.io/v2/user").
                 header("Content-Type", "application/json").
-                pathParam("username","padminitest").
+                pathParam("username","prahatest").
                 log().all().
                 when().
                 get("/{username}").
                 then().
                 statusCode(200).
                 body("id",equalTo(102111)).
-                body("firstName",equalTo("Padmini")).
+                body("firstName",equalTo("Praha")).
                 body("lastName",equalTo("Test")).
-                body("username",equalTo("padminitest")).
-                body("email",equalTo("padminitest@mail.com")).
+                body("username",equalTo("Prahatest")).
+                body("email",equalTo("prahatest@mail.com")).
                 body("phone",equalTo("9998822422")).
                 log().all();
     }
@@ -61,15 +61,14 @@ public class Activity2 {
         given().
                 baseUri("https://petstore.swagger.io/v2/user").
                 header("Content-Type", "application/json").
-                pathParam("username","padminitest").
+                pathParam("username","prahatest").
                 log().all().
                 when().
                 delete("/{username}").
                 then().
                 statusCode(200).
-                body("message",equalTo("padminitest")).
+                body("message",equalTo("prahatest")).
                 log().all();
 
     }
 }
-
